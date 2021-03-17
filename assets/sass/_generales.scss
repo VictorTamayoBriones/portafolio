@@ -1,0 +1,34 @@
+$logotipo: #1a1a1a;
+$profesion: #f2f2f2;
+$primario: #2581eb;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: #2581eb;
+}
+#git{
+    background: #181818;
+    color:#fff;
+    border-radius: 10px 0px 0px 10px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        background: #000;
+
+    }
+}
+#web{
+    background: #f0003c;
+    color:#fff;
+    border-radius: 0px 10px 10px 0px;
+    display: inline-block;
+    cursor: pointer;
+    &:hover{
+        background: #d10538;
+
+    }
+}

@@ -1,0 +1,55 @@
+.about{
+    width: 80%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    .card{
+        width: 40%;
+        background: $primario;
+        padding: 15px;
+        border-radius: 12px;
+        p{
+            color:#fff;
+            font-size: 20px;
+            letter-spacing: 2px;
+            line-height: 35px;
+            font-weight: 300;
+        }
+    }
+    .contacto{
+        width: 40%;
+        form{
+            padding: 12px;
+            h2{
+                text-align: center;
+                letter-spacing: 2px;
+                margin: 12px 0px;
+                font-size: 22px;
+            }
+            input[type=email], textarea{
+                max-width: 100%;
+                min-width: 100%;
+                max-height: 120px;
+                min-height: 10px;
+                margin: 8px 0px;
+                padding: 8px;
+                border: none;
+                border-bottom: 1px solid #2e2e2e75;
+                &:focus{
+                    outline: none;
+                    border-bottom: 1px solid $primario;
+                }
+            }
+            button{
+                width: 100%;
+                background: $primario;
+                color:#fff;
+                padding: 5px;
+                border: none;
+            }
+        }
+    }
+
+}

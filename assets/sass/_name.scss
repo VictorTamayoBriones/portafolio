@@ -1,0 +1,45 @@
+.name{
+    position: relative;
+    width: max-content;
+    margin: auto;
+    margin-top: 25px;
+    //-webkit-box-reflect: below -2px linear-gradient(transparent, #0002);
+    h2{
+        position: relative;
+        color:$logotipo;
+        letter-spacing: 5px;
+        font-size: 30px;
+        text-transform: uppercase;
+        overflow: hidden;
+        animation: typing 8s steps(13) infinite;
+        white-space: nowrap;
+    }
+    &::before{
+        content: '';
+        position: absolute;
+        top: 0;
+        right:0;
+        width: 2px;
+        height: 100%;
+        background: $logotipo;
+        animation: blinkCursor 0.8s steps(3) infinite;
+    }
+}
+
+@keyframes blinkCursor{
+    0%,75%{
+        opacity: 1;
+    }
+    76%,100%{
+        opacity: 0;
+    }
+}
+
+@keyframes typing{
+    0%,90%,100%{
+        width: 0;
+    }
+    30%,60%{
+        width: 320px;
+    }
+}

@@ -1,0 +1,269 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif; }
+
+body {
+  background: #2581eb; }
+
+#git {
+  background: #181818;
+  color: #fff;
+  border-radius: 10px 0px 0px 10px;
+  display: inline-block;
+  cursor: pointer; }
+  #git:hover {
+    background: #000; }
+
+#web {
+  background: #f0003c;
+  color: #fff;
+  border-radius: 0px 10px 10px 0px;
+  display: inline-block;
+  cursor: pointer; }
+  #web:hover {
+    background: #d10538; }
+
+header {
+  width: 100%; }
+  header nav {
+    background: #000;
+    width: 100%; }
+    header nav ul {
+      display: flex;
+      width: 100%;
+      justify-content: flex-end; }
+      header nav ul li {
+        list-style: none;
+        margin: 5px 12px; }
+        header nav ul li a {
+          text-decoration: none;
+          color: #fff;
+          display: block;
+          width: 100%;
+          padding: 5px;
+          font-weight: 200;
+          font-size: 18px; }
+          header nav ul li a:hover {
+            background: #fff;
+            color: #000; }
+  header #particles-js {
+    width: 100%;
+    height: 200px;
+    z-index: -1; }
+
+main {
+  width: 90%;
+  margin: auto;
+  background: #fff;
+  border-radius: 12px;
+  padding: 12px; }
+
+.name {
+  position: relative;
+  width: max-content;
+  margin: auto;
+  margin-top: 25px; }
+  .name h2 {
+    position: relative;
+    color: #1a1a1a;
+    letter-spacing: 5px;
+    font-size: 30px;
+    text-transform: uppercase;
+    overflow: hidden;
+    animation: typing 8s steps(13) infinite;
+    white-space: nowrap; }
+  .name::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: #1a1a1a;
+    animation: blinkCursor 0.8s steps(3) infinite; }
+
+@keyframes blinkCursor {
+  0%,75% {
+    opacity: 1; }
+  76%,100% {
+    opacity: 0; } }
+@keyframes typing {
+  0%,90%,100% {
+    width: 0; }
+  30%,60% {
+    width: 320px; } }
+.about {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 40px;
+  margin-bottom: 40px; }
+  .about .card {
+    width: 40%;
+    background: #2581eb;
+    padding: 15px;
+    border-radius: 12px; }
+    .about .card p {
+      color: #fff;
+      font-size: 20px;
+      letter-spacing: 2px;
+      line-height: 35px;
+      font-weight: 300; }
+  .about .contacto {
+    width: 40%; }
+    .about .contacto form {
+      padding: 12px; }
+      .about .contacto form h2 {
+        text-align: center;
+        letter-spacing: 2px;
+        margin: 12px 0px;
+        font-size: 22px; }
+      .about .contacto form input[type=email], .about .contacto form textarea {
+        max-width: 100%;
+        min-width: 100%;
+        max-height: 120px;
+        min-height: 10px;
+        margin: 8px 0px;
+        padding: 8px;
+        border: none;
+        border-bottom: 1px solid #2e2e2e75; }
+        .about .contacto form input[type=email]:focus, .about .contacto form textarea:focus {
+          outline: none;
+          border-bottom: 1px solid #2581eb; }
+      .about .contacto form button {
+        width: 100%;
+        background: #2581eb;
+        color: #fff;
+        padding: 5px;
+        border: none; }
+
+.demo {
+  width: 80%;
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px; }
+  .demo h2 {
+    text-align: center;
+    margin: 25px;
+    font-size: 25px; }
+  .demo .projectos {
+    background: #ffe921;
+    width: 100%;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .demo .projectos .projecto {
+      width: 33%;
+      height: max-content;
+      background: #2581eb;
+      color: #fff;
+      border-radius: 8px;
+      padding: 12px; }
+      .demo .projectos .projecto h3 {
+        text-align: center;
+        font-size: 20px; }
+      .demo .projectos .projecto img {
+        width: 100%; }
+      .demo .projectos .projecto p {
+        letter-spacing: 2px;
+        margin: 10px 0px; }
+      .demo .projectos .projecto .acciones {
+        display: flex;
+        justify-content: space-between;
+        /*
+        position: absolute;
+        visibility: hidden;
+        opacity: 0;
+        */ }
+        .demo .projectos .projecto .acciones a {
+          width: 50%;
+          border: none;
+          padding: 8px;
+          text-align: center; }
+          .demo .projectos .projecto .acciones a i {
+            font-size: 22px; }
+      .demo .projectos .projecto:hover {
+        /*
+        .acciones{
+            position: relative;
+            visibility: visible;
+            opacity: 1;
+        }
+        */ }
+
+footer {
+  width: 100%;
+  background: #000;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  margin-top: 25px; }
+  footer .redes {
+    width: 100%; }
+    footer .redes a {
+      color: #fff;
+      font-size: 20px;
+      margin: 8px; }
+
+@media (max-width: 900px) {
+  .about {
+    width: 95%; }
+    .about .card {
+      width: 50%;
+      padding: 12px; }
+      .about .card p {
+        font-size: 16px;
+        line-height: 30px; }
+
+  .demo {
+    width: 95%; }
+    .demo .projectos .projecto {
+      width: 33%; }
+      .demo .projectos .projecto h3 {
+        font-size: 18px; }
+      .demo .projectos .projecto p {
+        font-size: 15px; } }
+@media (max-width: 700px) {
+  .demo .projectos .projecto {
+    width: 45%;
+    margin: 10px 0px; }
+
+  .about {
+    width: 95%;
+    justify-content: center;
+    flex-wrap: wrap; }
+    .about .card {
+      width: 80%; }
+    .about .contacto {
+      width: 80%; } }
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+    margin: auto;
+    background: #fff;
+    border-radius: 12px;
+    padding: 12px;
+    transform: translateY(-110px); }
+
+  header nav ul {
+    justify-content: center; }
+
+  .name h2 {
+    font-size: 25px; }
+
+  @keyframes typing {
+    0%,90%,100% {
+      width: 0; }
+    30%,60% {
+      width: 275px; } }
+  .demo .projectos {
+    justify-content: center; }
+    .demo .projectos .projecto {
+      width: 80%;
+      margin: 10px 0px; } }
+
+/*# sourceMappingURL=style.css.map */
