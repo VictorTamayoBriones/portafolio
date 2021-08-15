@@ -1,0 +1,23 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VictorTamayoBriones/portafolio.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VictorTamayoBriones/portafolio/issues"
+  },
+  "homepage": "https://github.com/VictorTamayoBriones/portafolio#readme",
+  "dependencies": {
+    "firebase": "^8.9.1"
+  }
+}
