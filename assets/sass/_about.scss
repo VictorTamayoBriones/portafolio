@@ -18,6 +18,7 @@
             font-weight: 300;
         }
     }
+    
     .contacto{
         width: 40%;
         form{
@@ -49,6 +50,9 @@
                 color:#fff;
                 padding: 5px;
                 border: none;
+                &:hover{
+                    cursor: pointer;
+                }
             }
         }
     }
