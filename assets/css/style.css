@@ -198,6 +198,7 @@ main {
 .demo .projectos .projecto {
   width: 33%;
   height: max-content;
+  margin-bottom: 12px;
   background: #2581eb;
   color: #fff;
   border-radius: 8px;
