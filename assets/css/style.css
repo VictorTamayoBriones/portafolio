@@ -202,6 +202,8 @@ main {
   color: #fff;
   border-radius: 8px;
   padding: 12px;
+  display: flex;
+  flex-direction: column;
 }
 .demo .projectos .projecto h3 {
   text-align: center;
